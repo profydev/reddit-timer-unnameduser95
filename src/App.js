@@ -6,6 +6,8 @@ import {
   Redirect,
 } from 'react-router-dom';
 
+import Header from './Header';
+
 function PlaceholderHome() {
   return (
     <div>
@@ -25,6 +27,7 @@ function PlaceholderSearch() {
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route exact path="/" component={PlaceholderHome} />
         <Route path="/search" component={PlaceholderSearch} />
